@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16sp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Car Rent Kocak"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvJenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Type "
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:layout_below="@id/tvTitle"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvJenis"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/rbPajero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="Pajero"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbAlphard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Alphard"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbInova"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Inova"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbBrio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Brio"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Outside City"
+        android:textSize="20sp"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMember"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/rbInside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="Inside City"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbOutside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Outside City"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Day of Rent"
+        android:textSize="20sp"
+        android:layout_below="@id/rgCity"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDay">
+
+        <EditText
+            android:id="@+id/etTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Day"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDay"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:text="Rent"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/tvBon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_below="@id/btRent"
+        android:layout_marginTop="16dp"/>
+
+
+</RelativeLayout>

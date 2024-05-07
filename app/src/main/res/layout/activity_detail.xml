@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/tvCarType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Type:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvCityType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCarType"
+        android:text="City Type:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvDayOfRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCityType"
+        android:text="Day of Rent:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDayOfRent"
+        android:text="Discount:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDiscount"
+        android:text="Total:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvCarTypeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvCarType"
+        android:layout_alignBaseline="@id/tvCarType"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvCityTypeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvCityType"
+        android:layout_alignBaseline="@id/tvCityType"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvDayOfRentValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvDayOfRent"
+        android:layout_alignBaseline="@id/tvDayOfRent"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvDiscountValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvDiscount"
+        android:layout_alignBaseline="@id/tvDiscount"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvTotalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvTotal"
+        android:layout_alignBaseline="@id/tvTotal"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
